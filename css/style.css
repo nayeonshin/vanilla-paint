@@ -1,0 +1,35 @@
+@import "reset.css";
+
+body {
+  align-items: center;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+}
+
+.canvas {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 450px;
+  width: 450px;
+}
+
+.controls {
+  margin-top: 40px;
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .colors__color {
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
