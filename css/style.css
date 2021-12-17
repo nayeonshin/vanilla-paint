@@ -1,5 +1,9 @@
 @import "reset.css";
 
+:root {
+  --shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 body {
   align-items: center;
   background-color: #f6f6f6;
@@ -13,7 +17,7 @@ body {
 .canvas {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
   height: 400px;
   width: 400px;
 }
@@ -38,7 +42,7 @@ body {
   background-color: #fff;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   font-size: 12px;
@@ -59,7 +63,7 @@ body {
 
 .controls__colors .colors__color {
   border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
   cursor: pointer;
   height: 45px;
   width: 45px;
