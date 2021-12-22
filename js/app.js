@@ -1,6 +1,9 @@
 const canvas = document.querySelector(".js-canvas");
 const ctx = canvas.getContext("2d");
 
+canvas.width = canvas.clientWidth;
+canvas.height = canvas.clientHeight;
+
 ctx.strokeStyle = "#2c2c2c"; // black
 ctx.lineWidth = 2.5;
 
@@ -18,7 +21,10 @@ function onMouseMove(event) {
   const x = event.offsetX;
   const y = event.offsetY;
 
-  if (!isPainting) {
+  if (isPainting) {
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  } else {
     ctx.beginPath();
     ctx.moveTo(x, y);
   }
