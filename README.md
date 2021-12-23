@@ -8,12 +8,12 @@ Vanilla Paint is a paint app made with HTML, CSS, and Vanilla JS. Hence, its nam
 
 ![Drawing](img/docs/drawing.png)
 
-### Filling and clearing canvas
+### Filling & Clearing Canvas
 
 ![Filling canvas](img/docs/filling.png)
 
 ![Clearing canvas](img/docs/clearing.png)
 
-### Saving work
+### Saving Work
 
 ![Saving work](img/docs/saving.png)
