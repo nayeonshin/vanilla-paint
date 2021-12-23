@@ -2,8 +2,10 @@ const canvas = document.querySelector(".js-canvas");
 const ctx = canvas.getContext("2d");
 const colors = document.querySelectorAll(".js-colors__color");
 const range = document.querySelector(".js-range");
+
 const modeButton = document.querySelector(".js-buttons__fill");
 const saveButton = document.querySelector(".js-buttons__save");
+const clearButton = document.querySelector(".js-buttons__clear");
 
 const INITIAL_COLOR = "#2c2c2c"; // black
 
@@ -30,6 +32,11 @@ function handleColorClick(event) {
   const color = event.target.style.backgroundColor;
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
+}
+
+function handleClearClick() {
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function handleSaveClick() {
@@ -92,6 +99,7 @@ canvas.addEventListener("contextmenu", handleContextMenu);
 
 modeButton.addEventListener("click", handleModeClick);
 saveButton.addEventListener("click", handleSaveClick);
+clearButton.addEventListener("click", handleClearClick);
 
 colors.forEach((color) => color.addEventListener("click", handleColorClick));
 range.addEventListener("input", handleRangeChange);
