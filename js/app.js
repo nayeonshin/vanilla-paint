@@ -12,8 +12,8 @@ const INITIAL_COLOR = "#2c2c2c"; // black
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
-// Sets initial canvas' background color to white
-ctx.fillStyle = "#fff";
+// Sets initial canvas' bg color to avoid transparent bg
+ctx.fillStyle = "#fff"; // white
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 ctx.strokeStyle = INITIAL_COLOR;
