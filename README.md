@@ -1,4 +1,4 @@
-# Vanilla Paint
+# [Vanilla Paint](https://vanilla-paint.netlify.app)
 
 Vanilla Paint is a paint app made with HTML, CSS, and Vanilla JS. Hence, its name is "Vanilla" Paint.
 
